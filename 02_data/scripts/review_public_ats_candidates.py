@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Review public ATS job-posting candidates.
 
-The output is a review aid, not the final sample. Include decisions still need
-human confirmation before rows move into 02_data/raw/job_posting_sample.csv.
+The output is a criteria-based review aid. Included rows can be promoted into
+02_data/raw/job_posting_sample.csv as auto_reviewed entries.
 """
 
 from __future__ import annotations
@@ -57,6 +57,7 @@ HOLD_TITLE_TERMS = (
 
 STRONG_AI_TITLE_TERMS = (
     "ai engineer",
+    "ai application engineer",
     "ai research",
     "research engineer",
     "research scientist",

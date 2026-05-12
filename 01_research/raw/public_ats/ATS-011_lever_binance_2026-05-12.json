@@ -5874,9 +5874,9 @@
       "team": "Marketing",
       "allLocations": [
         "Asia",
-        "South East Asia",
-        "Indonesia, Jakarta",
-        "Taiwan, Taipei"
+        "South Korea, Seoul",
+        "Taiwan, Taipei",
+        "Kuala Lumpur"
       ]
     },
     "createdAt": 1752602633787,
@@ -9442,51 +9442,6 @@
     "descriptionBodyPlain": "",
     "hostedUrl": "https://jobs.lever.co/binance/1f5bdcbd-a60a-4b4c-8615-ec34f10ab821",
     "applyUrl": "https://jobs.lever.co/binance/1f5bdcbd-a60a-4b4c-8615-ec34f10ab821/apply"
-  },
-  {
-    "additionalPlain": "Why Binance\n• Shape the future with the world’s leading blockchain ecosystem\n• Collaborate with world-class talent in a user-centric global organization with a flat structure\n• Tackle unique, fast-paced projects with autonomy in an innovative environment\n• Thrive in a results-driven workplace with opportunities for career growth and continuous learning\n• Competitive salary and company benefits\n• Work-from-home arrangement (the arrangement may vary depending on the work nature of the business team)\n\nBinance is committed to being an equal opportunity employer. We believe that having a diverse workforce is fundamental to our success.\nBy submitting a job application, you confirm that you have read and agree to our Candidate Privacy Notice.\n",
-    "additional": "<div><b style=\"font-size: 18px\">Why Binance</b></div><div><span style=\"font-size: 16px\">• Shape the future with the world’s leading blockchain ecosystem</span></div><div><span style=\"font-size: 16px\">• Collaborate with world-class talent in a user-centric global organization with a flat structure</span></div><div><span style=\"font-size: 16px\">• Tackle unique, fast-paced projects with autonomy in an innovative environment</span></div><div><span style=\"font-size: 16px\">• Thrive in a results-driven workplace with opportunities for career growth and continuous learning</span></div><div><span style=\"font-size: 16px\">• Competitive salary and company benefits</span></div><div><span style=\"font-size: 16px\">• Work-from-home arrangement (the arrangement may vary depending on the work nature of the business team)</span></div><div><br></div><div><span style=\"font-size: 16px\">Binance is committed to being an equal opportunity employer. We believe that having a diverse workforce is fundamental to our success.</span></div><div><i style=\"font-size: 16px\">By submitting a job application, you confirm that you have read and agree to our </i><b><a style=\"font-size: 16px\" href=\"https://www.binance.com/en/candidate/privacy/notice\"><i>Candidate Privacy Notice</i></a></b><i style=\"font-size: 16px\">.</i></div>",
-    "categories": {
-      "commitment": "Full-time: Remote",
-      "department": "Engineering",
-      "location": "Asia",
-      "team": "QA",
-      "allLocations": [
-        "Asia",
-        "UAE, Dubai",
-        "Brazil, Sao Paulo",
-        "Romania, Bucharest",
-        "Georgia, Tbilisi",
-        "Mexico, Mexico City",
-        "South East Asia",
-        "Vietnam, Ho Chi Minh",
-        "Taiwan, Taipei",
-        "Latin America"
-      ]
-    },
-    "createdAt": 1771219255458,
-    "descriptionPlain": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Binance offerings range from trading and finance to education, research, payments, institutional services, Web3 features, and more. We leverage the power of digital assets and blockchain to build an inclusive financial ecosystem to advance the freedom of money and improve financial access for people around the world.\n\n\nAbout The Team\nThe Binance Pay & Card team is revolutionizing the way people transact and manage their finances globally. Binance Pay is a cutting-edge payment solution that enables users to send, receive, and pay with crypto seamlessly. Join us to be part of a dynamic team driving the future of digital payments and financial technology.\n",
-    "description": "<div><span style=\"font-size: 16px\">Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Binance offerings range from trading and finance to education, research, payments, institutional services, Web3 features, and more. We leverage the power of digital assets and blockchain to build an inclusive financial ecosystem to advance the freedom of money and improve financial access for people around the world.</span></div><div><br></div><div><strong style=\"font-size: 16px;\">About The Team</strong></div>\n<div><span style=\"font-size: 16px;\">The Binance Pay &amp; Card team is revolutionizing the way people transact and manage their finances globally. Binance Pay is a cutting-edge payment solution that enables users to send, receive, and pay with crypto seamlessly. Join us to be part of a dynamic team driving the future of digital payments and financial technology.</span></div>",
-    "id": "fae62bf6-84c8-4730-aa51-66cf5761dd3e",
-    "lists": [
-      {
-        "text": "Responsibilities",
-        "content": "\n<li>Work closely with team members (developers, product manager, customer support and partners) to develop, test and deliver high quality products</li>\n<li>Create detailed, comprehensive and well-structured test plans and test cases</li>\n<li>Prevent, collect, analyze and track product defects</li>\n<li>Design, develop and execute automation scripts</li>\n<li>Hands-on manual investigation and reproduction of functional backend software issues</li>\n<li>Root cause analysis of existing test script failures</li>\n<li>Identification of current test script deficiencies and candidates for additional scripted coverage</li>\n<li>Investigatory testing of unreleased features including defining requirements, behavior and impact</li>\n<li>Documentation and design of candidate test scenarios for the above</li>\n"
-      },
-      {
-        "text": "Requirements",
-        "content": "\n<li>3-6 years of backend QA engineering experience, frontend and backend auto testing experience</li>\n<li>Prior knowledge in the payment/funding related domain would be highly advantageous</li>\n<li>Full cycle testing from designing manual tests, developing scripts and execution</li>\n<li>Scripting ability using Java or Python</li>\n<li>Experience testing backend services such as APIs, Databases</li>\n<li>Experience in functional and integration testing for web and mobile applications</li>\n<li>Solid hands-on experience in test automation framework design and development, covering both frontend and backend components</li>\n<li>Proficient in conducting root cause analysis to identify and address underlying issues impacting software quality</li>\n<li>Strong analytical and trouble-shooting skills, enjoys breaking things and solving problems - not just able to find out the \"what,\" but also the \"why\"</li>\n<li>User Focus mindset, demonstrate good logical thinking and seamless team communication skills</li>\n"
-      }
-    ],
-    "text": "QA Engineer - Payment Tech",
-    "country": "SG",
-    "workplaceType": "remote",
-    "opening": "<div><span style=\"font-size: 16px\">Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Binance offerings range from trading and finance to education, research, payments, institutional services, Web3 features, and more. We leverage the power of digital assets and blockchain to build an inclusive financial ecosystem to advance the freedom of money and improve financial access for people around the world.</span></div>",
-    "openingPlain": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Binance offerings range from trading and finance to education, research, payments, institutional services, Web3 features, and more. We leverage the power of digital assets and blockchain to build an inclusive financial ecosystem to advance the freedom of money and improve financial access for people around the world.\n",
-    "descriptionBody": "<div><strong style=\"font-size: 16px;\">About The Team</strong></div>\n<div><span style=\"font-size: 16px;\">The Binance Pay &amp; Card team is revolutionizing the way people transact and manage their finances globally. Binance Pay is a cutting-edge payment solution that enables users to send, receive, and pay with crypto seamlessly. Join us to be part of a dynamic team driving the future of digital payments and financial technology.</span></div>",
-    "descriptionBodyPlain": "About The Team\nThe Binance Pay & Card team is revolutionizing the way people transact and manage their finances globally. Binance Pay is a cutting-edge payment solution that enables users to send, receive, and pay with crypto seamlessly. Join us to be part of a dynamic team driving the future of digital payments and financial technology.\n",
-    "hostedUrl": "https://jobs.lever.co/binance/fae62bf6-84c8-4730-aa51-66cf5761dd3e",
-    "applyUrl": "https://jobs.lever.co/binance/fae62bf6-84c8-4730-aa51-66cf5761dd3e/apply"
   },
   {
     "additionalPlain": "Why Binance\n• Shape the future with the world’s leading blockchain ecosystem\n• Collaborate with world-class talent in a user-centric global organization with a flat structure\n• Tackle unique, fast-paced projects with autonomy in an innovative environment\n• Thrive in a results-driven workplace with opportunities for career growth and continuous learning\n• Competitive salary and company benefits\n• Work-from-home arrangement (the arrangement may vary depending on the work nature of the business team)\n\nBinance is committed to being an equal opportunity employer. We believe that having a diverse workforce is fundamental to our success.\nBy submitting a job application, you confirm that you have read and agree to our Candidate Privacy Notice.\n",

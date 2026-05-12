@@ -57,7 +57,7 @@ python3 02_data/scripts/job_posting_collection_dry_run.py \
 - `02_data/job_posting_sample.dry_run.csv`
 - `02_data/job_posting_manual_review.dry_run.csv`
 
-실제 표본 CSV인 `02_data/raw/job_posting_sample.csv`에는 수동 검수 후 확정된 행만 옮긴다.
+실제 표본 CSV인 `02_data/raw/job_posting_sample.csv`에는 수동 검수 또는 기준 기반 자동 검수 후 확정된 행만 옮긴다.
 
 ## 4. 자동 수집
 
@@ -72,7 +72,7 @@ python3 02_data/scripts/public_ats_job_board_fetch.py
 python3 02_data/scripts/public_ats_job_board_fetch.py --fetch --write
 ```
 
-첫 번째 명령은 대상 공개 API 목록만 확인한다. 두 번째 명령은 Ashby·Lever 공개 채용 보드 API를 저속 호출해 후보 CSV, 수동 검수 큐, 출처 로그, 원본 JSON을 생성한다.
+첫 번째 명령은 대상 공개 API 목록만 확인한다. 두 번째 명령은 Ashby·Lever·Greenhouse 공개 채용 보드 API를 저속 호출해 후보 CSV, 수동 검수 큐, 출처 로그, 원본 JSON을 생성한다.
 
 Work24 Open API는 현재 보류한다. 개인회원 신청으로는 채용정보목록·채용정보상세 API를 사용할 수 없어, 본 프로젝트의 채용공고 표본 수집 경로로 바로 쓰기 어렵다.
 
@@ -101,9 +101,9 @@ python3 02_data/scripts/work24_job_posting_fetch.py \
 
 첫 번째 명령은 계획 모드라 네트워크에 접근하지 않는다. 두 번째 명령은 저장된 XML fixture로 CSV 변환을 검증한다. 세 번째 명령만 실제 API에 접근하므로, 채용정보목록·상세 API 권한이 확인된 경우에만 실행한다. 결과는 최종 표본이 아니라 수동 검수 후보 파일로 저장한다.
 
-## 5. 수동 검수
+## 5. 검수와 표본 승격
 
-자동 수집 후보는 `02_data/job_posting_manual_review_template.csv` 형식으로 검수한다. 최종 표본에 넣을 때만 `sample_id`를 부여하고 `02_data/raw/job_posting_sample.csv`에 반영한다.
+자동 수집 후보는 `02_data/job_posting_manual_review_template.csv` 형식으로 검수한다. 공개 ATS 후보는 `review_public_ats_candidates.py`로 먼저 `include`, `hold`, `exclude`를 판정하고, `promote_reviewed_candidates.py`로 include 행만 최종 표본에 반영한다. 사람이 개별 URL을 모두 확인하지 않은 경우 `manual_reviewed=auto_reviewed`로 표시한다.
 
 검수 기준:
 
@@ -115,4 +115,4 @@ python3 02_data/scripts/work24_job_posting_fetch.py \
 
 ## 6. 본문 반영
 
-본문에는 표본 수, 수집 기간, 플랫폼, 검색어, 제외 기준, 수동 검수 방식, 대표성 한계를 함께 적는다. 공고 수를 실제 채용 수나 시장 점유율로 해석하지 않는다.
+본문에는 표본 수, 수집 기간, 플랫폼, 검색어, 제외 기준, 검수 방식, 대표성 한계를 함께 적는다. 공고 수를 실제 채용 수나 시장 점유율로 해석하지 않는다.

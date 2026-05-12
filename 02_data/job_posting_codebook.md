@@ -4,7 +4,7 @@
 
 - `collection_method=auto`: robots.txt·서비스 약관·공개 API/다운로드 허용 범위 확인 후 저속 자동 수집.
 - `collection_method=manual`: 작성자가 브라우저로 직접 확인해 수동 입력.
-- 자동 수집 자료도 최종 표본 편입 전 작성자가 수동 검수한다.
+- 자동 수집 자료는 최종 표본 편입 전 공개 원본 JSON과 자동 검수 기준을 통과해야 한다. 사람이 개별 URL을 모두 확인하지 않은 경우 `manual_reviewed=auto_reviewed`로 남긴다.
 - 로그인 우회, 캡차 우회, 유료벽 우회, 비공개 API 접근 자료는 제외한다.
 
 ## 직무 7분류
@@ -70,7 +70,7 @@
 | source_log_id | `02_data/source_log.csv`의 로그 ID |
 | request_interval_seconds | 자동 수집 요청 간격 |
 | crawler_user_agent | 사용한 User-Agent |
-| manual_reviewed | 작성자 수동 검수 여부 |
+| manual_reviewed | `yes`, `no`, `auto_reviewed`, `hold` 중 하나. `auto_reviewed`는 공개 원본 JSON과 자동 검수 기준을 통과했다는 뜻이다. |
 
 ## 본문 사용 제한
 

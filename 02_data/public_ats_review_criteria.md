@@ -10,7 +10,7 @@
 
 - 회사명, 직무명, URL, 출처 로그 ID가 있다.
 - 위치 필드에 한국, 서울, KR, South Korea 등 한국 관련 근거가 있다.
-- 직무명 또는 본문 근거가 AI/ML/데이터사이언스/LLM/RAG/NLP/CV/추천/모델링/추론/AI 반도체와 직접 연결된다.
+- 직무명 또는 본문 근거가 AI/ML/데이터사이언스/LLM/RAG/NLP/CV/추천/모델링/추론/AI 반도체와 직접 연결된다. `AI Application Engineer`처럼 AI 제품 개발 직무임이 제목에서 명확한 경우도 포함한다.
 - 엔지니어, 리서처, 데이터 사이언티스트, AI 제품 개발, MLOps, AI 플랫폼 등 기술 직무로 볼 수 있다.
 - 동일 회사·동일 직무·동일 URL 중복이 아니다.
 
@@ -35,4 +35,4 @@
 
 ## 최종 표본 반영
 
-`include` 판정 후보만 `JOB-001`부터 `sample_id`를 부여해 `02_data/raw/job_posting_sample.csv`로 옮긴다. 그래도 최종 본문에는 “자동 수집 + 수동 검수 표본”이라고 적고, 대표통계가 아님을 명시한다.
+`include` 판정 후보만 `JOB-001`부터 `sample_id`를 부여해 `02_data/raw/job_posting_sample.csv`로 옮긴다. 사람이 개별 URL을 모두 확인하지 않은 경우 `manual_reviewed=auto_reviewed`로 표시하고, 최종 본문에는 “자동 수집 + 기준 기반 검수 표본”이며 대표통계가 아님을 명시한다.

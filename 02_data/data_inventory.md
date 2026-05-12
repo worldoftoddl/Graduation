@@ -13,13 +13,13 @@
 | DATA-003 | `02_data/raw/eaps_employment_by_industry_occupation.csv` / `02_data/processed/eaps_ai_related_employment.csv` | LAB-002 | AI 관련 후보 산업·직업군 고용 | 예정 |
 | DATA-004 | `02_data/raw/regional_employment_ai_related.csv` / `02_data/processed/regional_ai_labor_distribution.csv` | LAB-003 | 지역·산업·직업 분포 | 예정 |
 | DATA-005 | `02_data/raw/wage_job_portal_ai_occupations.csv` / `02_data/processed/ai_occupation_wage_outlook.csv` | LAB-004, LAB-005 | 직무·직급별 보상 기준선 | 예정 |
-| DATA-006 | `02_data/raw/job_posting_sample.csv` / `02_data/processed/job_posting_sample_coded.csv` | 자동 수집 + 수동 검수 표본 | 요구 스킬셋·직무명 분석 | 예정 |
+| DATA-006 | `02_data/raw/job_posting_sample.csv` / `02_data/processed/job_posting_sample_coded.csv` | 자동 수집 + 기준 기반 검수 표본 | 요구 스킬셋·직무명 분석 | 표본 50건 작성 |
 | DATA-007 | `02_data/raw/sw_industry_spri_2024.csv` / `02_data/processed/sw_industry_spri_2024.csv` | LAB-007 | SW 산업 인력과 AI 비교 | 예정 |
 | DATA-008 | `02_data/job_posting_collection_targets_template.csv` | 수집 대상 후보 URL·검색 조건 | 자동 수집 전 허용 조건 확인 | 템플릿 |
 | DATA-009 | `02_data/job_posting_manual_review_template.csv` | 자동 수집 후보 공고 | 최종 표본 편입 전 수동 검수 | 템플릿 |
 | DATA-010 | `02_data/raw/work24_job_posting_candidates.csv` / `02_data/job_posting_manual_review.work24.csv` | Work24 채용정보 Open API | Work24 채용공고 수동 검수 후보 | 보류 |
-| DATA-011 | `02_data/raw/public_ats_job_posting_candidates.csv` / `02_data/job_posting_manual_review.public_ats.csv` | Ashby·Lever 공개 채용 보드 API | 공개 ATS 기반 채용공고 수동 검수 후보 | 후보 43건 수집 |
-| DATA-012 | `02_data/processed/public_ats_reviewed_candidates.csv` | DATA-011 | 공개 ATS 후보 자동 검수 결과 | include 37건, hold 6건 |
+| DATA-011 | `02_data/raw/public_ats_job_posting_candidates.csv` / `02_data/job_posting_manual_review.public_ats.csv` | Ashby·Lever·Greenhouse 공개 채용 보드 API | 공개 ATS 기반 채용공고 검수 후보 | 후보 55건 수집 |
+| DATA-012 | `02_data/processed/public_ats_reviewed_candidates.csv` | DATA-011 | 공개 ATS 후보 자동 검수 결과 | include 50건, hold 5건 |
 
 ## 공통 메타데이터 필드
 
@@ -66,7 +66,9 @@
 | source_table | 통계표명 |
 | download_date | 다운로드일 |
 
-### DATA-006. 채용공고 자동 수집 + 수동 검수 표본
+### DATA-006. 채용공고 자동 수집 + 기준 기반 검수 표본
+
+2026-05-12 기준 공개 ATS 후보 중 include 50건을 `JOB-001`~`JOB-050`으로 반영했다. `manual_reviewed=auto_reviewed`는 사람이 개별 URL을 모두 수동 확인했다는 뜻이 아니라, 공개 ATS 원본 JSON과 자동 검수 기준을 통과했다는 뜻이다.
 
 | 컬럼 | 설명 |
 |---|---|
@@ -144,18 +146,18 @@
 
 ### DATA-011. 공개 ATS 채용공고 후보
 
-`02_data/scripts/public_ats_job_board_fetch.py`로 생성한다. Ashby와 Lever의 공개 채용 보드 API를 사용해 현재 게시 중인 공고를 가져오고, 한국 위치 필드와 AI/ML 직무 근거가 있는 후보만 남긴다.
+`02_data/scripts/public_ats_job_board_fetch.py`로 생성한다. Ashby, Lever, Greenhouse의 공개 채용 보드 API를 사용해 현재 게시 중인 공고를 가져오고, 한국 위치 필드와 AI/ML 직무 근거가 있는 후보만 남긴다.
 
 주의:
 
 - `02_data/raw/public_ats_job_posting_candidates.csv`는 최종 표본이 아니라 수동 검수 전 후보 파일이다.
 - 원본 JSON은 `01_research/raw/public_ats/`에 저장한다.
-- 수집 범위는 회사 공식 채용 보드 12개이므로 대표통계가 아니라 탐색적 보조 표본이다.
+- 수집 범위는 회사 공식 채용 보드 13개이므로 대표통계가 아니라 탐색적 보조 표본이다.
 - 최종 표본 편입 시 중복·비기술 직무·해외 직무를 수동으로 제외하고 `sample_id`를 부여한다.
 
 ### DATA-012. 공개 ATS 후보 자동 검수 결과
 
-`02_data/scripts/review_public_ats_candidates.py`로 생성한다. DATA-011 후보를 `include`, `exclude`, `hold`로 1차 판정하고, 포함 후보에 `recommended_sample_id`를 제안한다. 2026-05-12 실행 결과는 include 37건, hold 6건, exclude 0건이다.
+`02_data/scripts/review_public_ats_candidates.py`로 생성한다. DATA-011 후보를 `include`, `exclude`, `hold`로 1차 판정하고, 포함 후보에 `recommended_sample_id`를 제안한다. 2026-05-12 실행 결과는 include 50건, hold 5건, exclude 0건이다.
 
 주의:
 

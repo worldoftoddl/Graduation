@@ -6,7 +6,7 @@
 
 ## 수집 방식
 
-- 대상: Ashby, Lever 공개 채용 보드 API
+- 대상: Ashby, Lever, Greenhouse 공개 채용 보드 API
 - 방식: 인증키 없는 공개 job-board API에 저속 GET 요청
 - 요청 간격: 대상별 10초
 - User-Agent: `GraduationResearchBot/0.1`
@@ -28,8 +28,9 @@
 | ATS-010 | Fieldguide | Ashby | 2 |
 | ATS-011 | Binance | Lever | 2 |
 | ATS-012 | Palantir | Lever | 1 |
+| ATS-013 | Moloco | Greenhouse | 12 |
 
-합계: 43건
+합계: 55건
 
 ## 산출 파일
 
@@ -48,15 +49,14 @@
 
 ## 다음 단계
 
-1. 자동 검수 결과인 `02_data/processed/public_ats_reviewed_candidates.csv`를 확인한다.
-2. `include` 37건은 빠른 원문 확인 후 최종 표본으로 옮긴다.
-3. `hold` 6건은 원문 URL과 원본 JSON을 확인해 포함 또는 제외로 확정한다.
-4. 최종 표본이 50건 미만이면 공개 ATS 보드를 추가 수집한다.
+1. `include` 50건은 `02_data/raw/job_posting_sample.csv`에 `JOB-001`~`JOB-050`으로 반영했다.
+2. `hold` 5건은 경계 직무로 남겨 두고 본문 분석에는 사용하지 않는다.
+3. 본문 방법론에는 공개 ATS 현재 게시 공고의 자동 수집 + 기준 기반 검수 표본이며 대표통계가 아님을 명시한다.
 
 ## 자동 검수 결과
 
 - 결과 파일: `02_data/processed/public_ats_reviewed_candidates.csv`
 - 요약 파일: `02_data/processed/public_ats_review_summary.md`
-- include: 37건
-- hold: 6건
+- include: 50건
+- hold: 5건
 - exclude: 0건
