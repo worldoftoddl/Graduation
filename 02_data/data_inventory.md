@@ -19,6 +19,7 @@
 | DATA-009 | `02_data/job_posting_manual_review_template.csv` | 자동 수집 후보 공고 | 최종 표본 편입 전 수동 검수 | 템플릿 |
 | DATA-010 | `02_data/raw/work24_job_posting_candidates.csv` / `02_data/job_posting_manual_review.work24.csv` | Work24 채용정보 Open API | Work24 채용공고 수동 검수 후보 | 보류 |
 | DATA-011 | `02_data/raw/public_ats_job_posting_candidates.csv` / `02_data/job_posting_manual_review.public_ats.csv` | Ashby·Lever 공개 채용 보드 API | 공개 ATS 기반 채용공고 수동 검수 후보 | 후보 43건 수집 |
+| DATA-012 | `02_data/processed/public_ats_reviewed_candidates.csv` | DATA-011 | 공개 ATS 후보 자동 검수 결과 | include 37건, hold 6건 |
 
 ## 공통 메타데이터 필드
 
@@ -151,6 +152,16 @@
 - 원본 JSON은 `01_research/raw/public_ats/`에 저장한다.
 - 수집 범위는 회사 공식 채용 보드 12개이므로 대표통계가 아니라 탐색적 보조 표본이다.
 - 최종 표본 편입 시 중복·비기술 직무·해외 직무를 수동으로 제외하고 `sample_id`를 부여한다.
+
+### DATA-012. 공개 ATS 후보 자동 검수 결과
+
+`02_data/scripts/review_public_ats_candidates.py`로 생성한다. DATA-011 후보를 `include`, `exclude`, `hold`로 1차 판정하고, 포함 후보에 `recommended_sample_id`를 제안한다. 2026-05-12 실행 결과는 include 37건, hold 6건, exclude 0건이다.
+
+주의:
+
+- 자동 판정은 최종 검수가 아니라 검수 보조 결과다.
+- `hold` 후보는 원문 공고를 확인한 뒤 최종 포함 여부를 결정한다.
+- 최종 표본은 `02_data/raw/job_posting_sample.csv`에 별도 반영한다.
 
 ## 차트 후보
 
