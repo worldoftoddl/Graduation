@@ -1,0 +1,212 @@
+[
+  {
+    "additional": "",
+    "additionalPlain": "",
+    "categories": {
+      "commitment": "Full-time",
+      "department": "1. Tech",
+      "location": "Palo Alto, CA / Yeoksam, Seoul",
+      "team": "Research",
+      "allLocations": [
+        "Palo Alto, CA / Yeoksam, Seoul"
+      ]
+    },
+    "createdAt": 1745301197137,
+    "descriptionPlain": "We are seeking a highly motivated AI Scientist specializing in Machine Learning to join our growing AI R&D team. In this role, you will be at the forefront of developing and deploying cutting-edge deep learning models to solve real-world temporal modeling challenges in manufacturing. We’re looking for a candidate with strong practical R&D experience, grounded in solid theoretical fundamentals, and deep expertise in AI disciplines. The ideal candidate will have a deep understanding of state-of-the-art machine learning algorithms and techniques, a track record of impactful publications in top-tier conferences such as NeurIPS, ICML, ICLR, KDD, CVPR, or ICCV, and a solid background in computer science and engineering. Experience collaborating with software engineering teams to scale and productize ML solutions is a strong plus. This is a high-impact role that combines foundational research, system-level design, and hands-on implementation. You’ll work closely with cross-functional teams to develop innovative solutions that guide strategic decisions and deliver tangible business value.\n",
+    "description": "<div>We are seeking a highly motivated AI Scientist specializing in Machine Learning to join our growing AI R&amp;D team. In this role, you will be at the forefront of developing and deploying cutting-edge deep learning models to solve real-world temporal modeling challenges in manufacturing. We’re looking for a candidate with strong practical R&amp;D experience, grounded in solid theoretical fundamentals, and deep expertise in AI disciplines. The ideal candidate will have a deep understanding of state-of-the-art machine learning algorithms and techniques, a track record of impactful publications in top-tier conferences such as NeurIPS, ICML, ICLR, KDD, CVPR, or ICCV, and a solid background in computer science and engineering. Experience collaborating with software engineering teams to scale and productize ML solutions is a strong plus. This is a high-impact role that combines foundational research, system-level design, and hands-on implementation. You’ll work closely with cross-functional teams to develop innovative solutions that guide strategic decisions and deliver tangible business value.</div>",
+    "id": "dbfd0b6c-d2e9-460c-91a0-6dde6f29046d",
+    "lists": [
+      {
+        "text": "Responsibilities",
+        "content": "<li>Design and implement Transformer-based architectures for time-series prediction and sequence modeling, across both univariate and multivariate data.</li><li>Drive the full machine learning lifecycle—from exploratory data analysis to model deployment, monitoring, and continuous improvement.</li><li>Conduct rigorous benchmarking, ablation studies, and performance optimization to ensure robustness and efficiency.</li><li>Collaborate closely with data scientists, engineers, and product managers to translate complex business requirements into scalable technical solutions.</li><li>Partner with software engineers to scale and productize ML algorithms within manufacturing AI software products.</li><li>Contribute to Gauss Labs’ intellectual property portfolio through patents and high-impact technical publications.</li><li>Mentor junior team members and play an active role in shaping the team’s AI roadmap and long-term strategy.</li>"
+      },
+      {
+        "text": "Key Qualifications",
+        "content": "<li>Ph.D. or Master’s degree in Computer Science, Machine Learning, Statistics, or a related field.</li><li>3+ years of hands-on experience in deep learning, with a strong focus on sequence modeling and time-series forecasting.</li><li>In-depth expertise in Transformer architectures and their applications beyond natural language processing.</li><li>Proficiency in Python and deep learning frameworks such as PyTorch, TensorFlow, or JAX.</li><li>Solid mathematical foundation in statistics, optimization, and signal processing.</li><li>Familiarity with hybrid modeling approaches that combine deep learning and traditional statistical methods.</li><li>Experience working with noisy, sparse, or irregularly sampled time-series data.</li><li>Strong publication track record in top-tier ML/AI conferences (e.g., NeurIPS, ICML, ICLR).</li><li>Practical experience deploying ML models in production environments, with knowledge of MLOps best practices.</li><li>[Nice to have] Strong experience in neural network training and optimization, preferably with hands-on expertise in tabular foundation models for structured data applications.</li>"
+      }
+    ],
+    "text": "AI Scientist - Machine Learning (US/KR)",
+    "workplaceType": "hybrid",
+    "opening": "",
+    "openingPlain": "",
+    "descriptionBody": "<div>We are seeking a highly motivated AI Scientist specializing in Machine Learning to join our growing AI R&amp;D team. In this role, you will be at the forefront of developing and deploying cutting-edge deep learning models to solve real-world temporal modeling challenges in manufacturing. We’re looking for a candidate with strong practical R&amp;D experience, grounded in solid theoretical fundamentals, and deep expertise in AI disciplines. The ideal candidate will have a deep understanding of state-of-the-art machine learning algorithms and techniques, a track record of impactful publications in top-tier conferences such as NeurIPS, ICML, ICLR, KDD, CVPR, or ICCV, and a solid background in computer science and engineering. Experience collaborating with software engineering teams to scale and productize ML solutions is a strong plus. This is a high-impact role that combines foundational research, system-level design, and hands-on implementation. You’ll work closely with cross-functional teams to develop innovative solutions that guide strategic decisions and deliver tangible business value.</div>",
+    "descriptionBodyPlain": "We are seeking a highly motivated AI Scientist specializing in Machine Learning to join our growing AI R&D team. In this role, you will be at the forefront of developing and deploying cutting-edge deep learning models to solve real-world temporal modeling challenges in manufacturing. We’re looking for a candidate with strong practical R&D experience, grounded in solid theoretical fundamentals, and deep expertise in AI disciplines. The ideal candidate will have a deep understanding of state-of-the-art machine learning algorithms and techniques, a track record of impactful publications in top-tier conferences such as NeurIPS, ICML, ICLR, KDD, CVPR, or ICCV, and a solid background in computer science and engineering. Experience collaborating with software engineering teams to scale and productize ML solutions is a strong plus. This is a high-impact role that combines foundational research, system-level design, and hands-on implementation. You’ll work closely with cross-functional teams to develop innovative solutions that guide strategic decisions and deliver tangible business value.\n",
+    "country": null,
+    "hostedUrl": "https://jobs.lever.co/gausslabs/dbfd0b6c-d2e9-460c-91a0-6dde6f29046d",
+    "applyUrl": "https://jobs.lever.co/gausslabs/dbfd0b6c-d2e9-460c-91a0-6dde6f29046d/apply"
+  },
+  {
+    "additional": "",
+    "additionalPlain": "",
+    "categories": {
+      "commitment": "Full-time",
+      "department": "1. Tech",
+      "location": "Palo Alto, CA",
+      "team": "Research",
+      "allLocations": [
+        "Palo Alto, CA"
+      ]
+    },
+    "createdAt": 1750308428213,
+    "descriptionPlain": "Gauss Labs is looking for a passionate and talented AI Engineer to develop cutting-edge Industrial AI solutions that will normalize the standard of AI for manufacturing.  We are working with the world's best manufacturing customers while accessing the vast amount of real data from their manufacturing processes. We apply state-of-the-art AI technologies to the data and develop unprecedented AI/ML solutions to transform manufacturing to the next level.\nAs a Senior AI Engineer, you will be responsible for translating cutting-edge AI and machine learning research into robust, scalable software solutions. Your work will ensure the seamless integration of models into production environments and contribute to the broader success of AI initiatives across the company. You will develop AI software by working with seasoned Applied Scientists, Software Engineers, and Program Managers located in Palo Alto, California, USA, and Seoul, South Korea.\n",
+    "description": "<div>Gauss Labs is looking for a passionate and talented AI Engineer to develop cutting-edge Industrial AI solutions that will normalize the standard of AI for manufacturing.  We are working with the world's best manufacturing customers while accessing the vast amount of real data from their manufacturing processes. We apply state-of-the-art AI technologies to the data and develop unprecedented AI/ML solutions to transform manufacturing to the next level.</div><div>As a Senior AI Engineer, you will be responsible for translating cutting-edge AI and machine learning research into robust, scalable software solutions. Your work will ensure the seamless integration of models into production environments and contribute to the broader success of AI initiatives across the company. You will develop AI software by working with seasoned Applied Scientists, Software Engineers, and Program Managers located in Palo Alto, California, USA, and Seoul, South Korea.</div>",
+    "id": "13bb4715-22f7-40a7-a941-46121f1ff946",
+    "lists": [
+      {
+        "text": "Responsibilities",
+        "content": "<li>Collaborate with AI Scientists to understand model requirements and design scalable, efficient ML pipelines.</li><li>Build and maintain reliable, performant infrastructure for data processing, model training, evaluation, and deployment.</li><li>Own the end-to-end implementation of ML systems from research prototypes to production-grade code.</li><li>Optimize model training/inference, latency, and resource usage to meet performance and system constraints.</li><li>Develop monitoring, observability, and CI/CD tooling to support the full ML lifecycle in staging and production environments.</li><li>Ensure engineering best practices in code quality, testing, documentation, and software reliability.</li><li>Work with product and engineering teams to understand requirements and integrate AI systems into user-facing applications.</li>"
+      },
+      {
+        "text": "Key Qualifications",
+        "content": "<li>BS in Computer Science, Electrical Engineering, Machine Learning, or related technical field with 6 years of experience, or MA/PhD with 4 years of experience.</li><li>Proficiency in one or more modern programming languages such as Python, C++, or Java with an understanding of algorithms and data structures.</li><li>Strong expertise in Python data science stack (NumPy, Pandas) and ML/DL frameworks (scikit-learn, PyTorch, TensorFlow) for end-to-end model development.</li><li>3+ years building production-ready ML infrastructure including data pipelines, training/inference workflows, and deployment automation.</li><li>Solid understanding of software engineering best practices: version control (Git), unit testing, code review, and CI/CD. Familiarity with containerization and orchestration tools (e.g., Docker, Kubernetes).</li><li>Experience developing software applications and services with an understanding of design for scalability, performance, and reliability.</li><li>Strong problem-solving skills, attention to detail, and a collaborative mindset when working with research and product teams.</li>"
+      },
+      {
+        "text": "Preferred Qualifications",
+        "content": "<li>BS in Computer Science, Electrical Engineering, Machine Learning, or related technical field with 8 years of experience, or MA/PhD with 6 years of experience.</li><li>Knowledge of professional software engineering practices including source control management, code reviews, testing, and continuous integration/deployment.</li><li>Experience in optimizing training and inferencing structures for large scale ML/DL models.</li><li>Experience deploying machine learning models into production environments (e.g., batch, real-time, or edge deployments).</li><li>Experience in distributed/parallel systems, information retrieval, networking, and systems software development.</li><li>Development experience in a cloud service environment such as Amazon AWS, MS Azure, or Google Cloud Platform.</li>"
+      }
+    ],
+    "text": "Senior AI Engineer - Machine Learning (US)",
+    "country": "US",
+    "workplaceType": "hybrid",
+    "opening": "",
+    "openingPlain": "",
+    "descriptionBody": "<div>Gauss Labs is looking for a passionate and talented AI Engineer to develop cutting-edge Industrial AI solutions that will normalize the standard of AI for manufacturing.  We are working with the world's best manufacturing customers while accessing the vast amount of real data from their manufacturing processes. We apply state-of-the-art AI technologies to the data and develop unprecedented AI/ML solutions to transform manufacturing to the next level.</div><div>As a Senior AI Engineer, you will be responsible for translating cutting-edge AI and machine learning research into robust, scalable software solutions. Your work will ensure the seamless integration of models into production environments and contribute to the broader success of AI initiatives across the company. You will develop AI software by working with seasoned Applied Scientists, Software Engineers, and Program Managers located in Palo Alto, California, USA, and Seoul, South Korea.</div>",
+    "descriptionBodyPlain": "Gauss Labs is looking for a passionate and talented AI Engineer to develop cutting-edge Industrial AI solutions that will normalize the standard of AI for manufacturing.  We are working with the world's best manufacturing customers while accessing the vast amount of real data from their manufacturing processes. We apply state-of-the-art AI technologies to the data and develop unprecedented AI/ML solutions to transform manufacturing to the next level.\nAs a Senior AI Engineer, you will be responsible for translating cutting-edge AI and machine learning research into robust, scalable software solutions. Your work will ensure the seamless integration of models into production environments and contribute to the broader success of AI initiatives across the company. You will develop AI software by working with seasoned Applied Scientists, Software Engineers, and Program Managers located in Palo Alto, California, USA, and Seoul, South Korea.\n",
+    "hostedUrl": "https://jobs.lever.co/gausslabs/13bb4715-22f7-40a7-a941-46121f1ff946",
+    "applyUrl": "https://jobs.lever.co/gausslabs/13bb4715-22f7-40a7-a941-46121f1ff946/apply"
+  },
+  {
+    "additionalPlain": "[Interview process]\nApplication review - Phone interview - Virtual onsite interview - VP interview/Core Value interview - CEO interview\n",
+    "additional": "<div>[Interview process]</div><div>Application review - Phone interview - Virtual onsite interview - VP interview/Core Value interview - CEO interview</div>",
+    "categories": {
+      "commitment": "Full-time",
+      "department": "1. Tech",
+      "location": "Yeoksam, Seoul",
+      "team": "Manufacturing Data",
+      "allLocations": [
+        "Yeoksam, Seoul"
+      ]
+    },
+    "createdAt": 1765775708288,
+    "descriptionPlain": "As a Data Scientist, you will play a pivotal role in aligning our AI solutions with the unique needs of our manufacturing clients. Your primary responsibility will be to lead the development of state-of-the-art AI applications that tackle complex industry challenges, driving innovation and enhancing productivity.\nWe are seeking an experienced data scientist capable of extracting valuable insights from manufacturing data. Your tasks will include mining, interpreting, and analyzing customer data to discover hidden opportunities and fully leverage its potential. Also, your role will involve direct interaction with customers to grasp their challenges and to understand their unique data characteristics. By closely engaging with customers, you will develop tailored data models and tools to meet their specific needs. Additionally, you will collaborate with our cross-functional teams to conceive, design, and develop innovative AI products for manufacturing by identifying new product features based on the understanding of customer data.\nJoin a team of passionate innovators dedicated to revolutionizing the future of manufacturing. Take the lead in pioneering cutting-edge AI initiatives that directly impact real-world outcomes. Collaborate with a diverse and talented group of experts where your ideas will be highly valued, and your contributions will drive Gauss Labs towards becoming the global leader in industrial AI innovation.\n",
+    "description": "<div>As a Data Scientist, you will play a pivotal role in aligning our AI solutions with the unique needs of our manufacturing clients. Your primary responsibility will be to lead the development of state-of-the-art AI applications that tackle complex industry challenges, driving innovation and enhancing productivity.</div><div>We are seeking an experienced data scientist capable of extracting valuable insights from manufacturing data. Your tasks will include mining, interpreting, and analyzing customer data to discover hidden opportunities and fully leverage its potential. Also, your role will involve direct interaction with customers to grasp their challenges and to understand their unique data characteristics. By closely engaging with customers, you will develop tailored data models and tools to meet their specific needs. Additionally, you will collaborate with our cross-functional teams to conceive, design, and develop innovative AI products for manufacturing by identifying new product features based on the understanding of customer data.</div><div>Join a team of passionate innovators dedicated to revolutionizing the future of manufacturing. Take the lead in pioneering cutting-edge AI initiatives that directly impact real-world outcomes. Collaborate with a diverse and talented group of experts where your ideas will be highly valued, and your contributions will drive Gauss Labs towards becoming the global leader in industrial AI innovation.</div>",
+    "id": "dd91f0de-3de8-4f5f-90df-511592d6ddad",
+    "lists": [
+      {
+        "text": "Responsibilities",
+        "content": "<li>Design and implement customized AI solutions for manufacturing</li><li>Analyze manufacturing data to uncover opportunities and develop AI models</li><li>Collaborate with customers to understand their requirements and deliver clear, data-driven solutions</li><li>Work closely with our internal teams to ensure solutions are feasible, scalable, and aligned with product strategy</li><li>Present findings to both technical and non-technical stakeholders</li>"
+      },
+      {
+        "text": "Basic Qualifications",
+        "content": "<li>BS/MS in Engineering, Science, or a related field</li><li>3+ years of experience leading AI or data science projects in the semiconductor industry or another manufacturing field</li><li>Strong problem-solving skills and customer-focused mindset</li><li>Proficiency in data science tools: Python and SQL</li><li>Ability to work independently and as part of a team</li><li>Travel domestically to customer sites as needed (up to 20% of working hours)</li><li>Fluency in Korean</li>"
+      },
+      {
+        "text": "Preferred Qualifications",
+        "content": "<li>MS in Computer Science, Data Science, or related field</li><li>Experience in predictive modeling and cloud platforms (e.g., AWS, Azure, Google Cloud)</li><li>Excellent communication skills, with the ability to simplify complex technical concepts</li><li>Fluency in English</li>"
+      }
+    ],
+    "text": "Senior Data Scientist - Manufacturing Data (KR)",
+    "country": "KR",
+    "workplaceType": "hybrid",
+    "opening": "",
+    "openingPlain": "",
+    "descriptionBody": "<div>As a Data Scientist, you will play a pivotal role in aligning our AI solutions with the unique needs of our manufacturing clients. Your primary responsibility will be to lead the development of state-of-the-art AI applications that tackle complex industry challenges, driving innovation and enhancing productivity.</div><div>We are seeking an experienced data scientist capable of extracting valuable insights from manufacturing data. Your tasks will include mining, interpreting, and analyzing customer data to discover hidden opportunities and fully leverage its potential. Also, your role will involve direct interaction with customers to grasp their challenges and to understand their unique data characteristics. By closely engaging with customers, you will develop tailored data models and tools to meet their specific needs. Additionally, you will collaborate with our cross-functional teams to conceive, design, and develop innovative AI products for manufacturing by identifying new product features based on the understanding of customer data.</div><div>Join a team of passionate innovators dedicated to revolutionizing the future of manufacturing. Take the lead in pioneering cutting-edge AI initiatives that directly impact real-world outcomes. Collaborate with a diverse and talented group of experts where your ideas will be highly valued, and your contributions will drive Gauss Labs towards becoming the global leader in industrial AI innovation.</div>",
+    "descriptionBodyPlain": "As a Data Scientist, you will play a pivotal role in aligning our AI solutions with the unique needs of our manufacturing clients. Your primary responsibility will be to lead the development of state-of-the-art AI applications that tackle complex industry challenges, driving innovation and enhancing productivity.\nWe are seeking an experienced data scientist capable of extracting valuable insights from manufacturing data. Your tasks will include mining, interpreting, and analyzing customer data to discover hidden opportunities and fully leverage its potential. Also, your role will involve direct interaction with customers to grasp their challenges and to understand their unique data characteristics. By closely engaging with customers, you will develop tailored data models and tools to meet their specific needs. Additionally, you will collaborate with our cross-functional teams to conceive, design, and develop innovative AI products for manufacturing by identifying new product features based on the understanding of customer data.\nJoin a team of passionate innovators dedicated to revolutionizing the future of manufacturing. Take the lead in pioneering cutting-edge AI initiatives that directly impact real-world outcomes. Collaborate with a diverse and talented group of experts where your ideas will be highly valued, and your contributions will drive Gauss Labs towards becoming the global leader in industrial AI innovation.\n",
+    "hostedUrl": "https://jobs.lever.co/gausslabs/dd91f0de-3de8-4f5f-90df-511592d6ddad",
+    "applyUrl": "https://jobs.lever.co/gausslabs/dd91f0de-3de8-4f5f-90df-511592d6ddad/apply"
+  },
+  {
+    "additionalPlain": "[Interview process]\nApplication review - Coding interview - Virtual onsite interview - VP interview/Core Value interview - CEO interview\n",
+    "additional": "<div>[Interview process]</div>\n<div>Application review - Coding interview - Virtual onsite interview - VP interview/Core Value interview - CEO interview</div>",
+    "categories": {
+      "commitment": "Full-time",
+      "department": "1. Tech",
+      "location": "Yeoksam, Seoul",
+      "team": "Software Engineering",
+      "allLocations": [
+        "Yeoksam, Seoul"
+      ]
+    },
+    "createdAt": 1773623419368,
+    "descriptionPlain": "Gauss Labs seeks passionate, creative, and motivated software engineers. As a Gaussian Software Engineer, you will design and develop industrial metrology products. You'll collaborate with talented Software Engineers and Applied Scientists to deliver enterprise-quality software. You will gain experience in a hyper-growth environment by building reliable software using state-of-the-art engineering, machine learning, and AI technologies. The ideal candidate is passionate about delivering enterprise-level software products to customers. Success in this role requires commitment to teamwork and a positive attitude.\n",
+    "description": "<div><span data-token-index=\"0\">Gauss Labs seeks passionate, creative, and motivated software engineers. As a Gaussian Software Engineer, you will design and develop industrial metrology products. You'll collaborate with talented Software Engineers and Applied Scientists to deliver enterprise-quality software. You will gain experience in a hyper-growth environment by building reliable software using state-of-the-art engineering, machine learning, and AI technologies. The ideal candidate is passionate about delivering enterprise-level software products to customers. Success in this role requires commitment to teamwork and a positive attitude.</span></div>",
+    "id": "191e39a0-18e4-4618-881b-56a7a62bbe8f",
+    "lists": [
+      {
+        "text": "Responsibilities",
+        "content": "<div>\n\n<li>Learn and improve existing reliable, scalable, high-performance industrial metrology frameworks</li>\n<li>Optimize the performance of the industrial metrology module</li>\n<li>Design and implement backend APIs to control the industry metrology services</li>\n<li>Design and implement MLOps pipelines for the industry metrology applications</li>\n\n</div>"
+      },
+      {
+        "text": "Basic Qualifications",
+        "content": "<div>\n\n<li>Bachelor's degree in computer science, engineering, or a related discipline</li>\n<li>Professional software development experience with one or more programming languages</li>\n<li>Strong understanding of fundamental concepts in algorithms, data structures, and distributed computing</li>\n<li>Proven track record demonstrating fast learning ability and complex problem-solving skills</li>\n\n</div>"
+      },
+      {
+        "text": "Preferred Qualifications",
+        "content": "<div>\n\n<li>2+ years of experience in the full software development life cycle, including coding standards, code reviews, source control management, build processes, testing, and operations</li>\n<li>Experience with data processing systems, MLOps and cloud infrastructure (e.g., AWS, GCP, Azure, Kubernetes, Ray cluster, Mlflow, Flink, Spark, Hadoop, Kafka, Redis, MongoDB)</li>\n<li>Strong written and verbal communication skills in English and the ability to iterate quickly with teammates, incorporating feedback and holding a high bar for quality</li>\n\n</div>"
+      }
+    ],
+    "text": "Software Engineer (KR)",
+    "country": "KR",
+    "workplaceType": "hybrid",
+    "opening": "",
+    "openingPlain": "",
+    "descriptionBody": "<div><span data-token-index=\"0\">Gauss Labs seeks passionate, creative, and motivated software engineers. As a Gaussian Software Engineer, you will design and develop industrial metrology products. You'll collaborate with talented Software Engineers and Applied Scientists to deliver enterprise-quality software. You will gain experience in a hyper-growth environment by building reliable software using state-of-the-art engineering, machine learning, and AI technologies. The ideal candidate is passionate about delivering enterprise-level software products to customers. Success in this role requires commitment to teamwork and a positive attitude.</span></div>",
+    "descriptionBodyPlain": "Gauss Labs seeks passionate, creative, and motivated software engineers. As a Gaussian Software Engineer, you will design and develop industrial metrology products. You'll collaborate with talented Software Engineers and Applied Scientists to deliver enterprise-quality software. You will gain experience in a hyper-growth environment by building reliable software using state-of-the-art engineering, machine learning, and AI technologies. The ideal candidate is passionate about delivering enterprise-level software products to customers. Success in this role requires commitment to teamwork and a positive attitude.\n",
+    "hostedUrl": "https://jobs.lever.co/gausslabs/191e39a0-18e4-4618-881b-56a7a62bbe8f",
+    "applyUrl": "https://jobs.lever.co/gausslabs/191e39a0-18e4-4618-881b-56a7a62bbe8f/apply"
+  },
+  {
+    "additional": "",
+    "additionalPlain": "",
+    "categories": {
+      "commitment": "Full-time",
+      "department": "Stay in touch — join our talent pool.",
+      "location": "Yeoksam, Seoul",
+      "team": "Talent Pool",
+      "allLocations": [
+        "Yeoksam, Seoul"
+      ]
+    },
+    "createdAt": 1632806332012,
+    "descriptionPlain": "Gauss Labs Talent Pool \n\nWe appreciate you taking the time to submit your application for our Talent Pool. \nWe will be in touch should your qualifications be suitable for a future opening. \n\nContact: Gauss Labs Talent Acquisition Team (recruiting@gausslabs.ai)\n\n",
+    "description": "<div><b style=\"font-size: 18px;\">Gauss Labs Talent Pool </b></div><div><br></div><div>We appreciate you taking the time to submit your application for our Talent Pool. </div><div>We will be in touch should your qualifications be suitable for a future opening. </div><div><br></div><div>Contact: Gauss Labs Talent Acquisition Team (recruiting@gausslabs.ai)</div><div><br></div>",
+    "id": "aa0ebe50-530f-4eb1-88a0-c42527966286",
+    "lists": [],
+    "text": "Talent Pool (KR)",
+    "country": "KR",
+    "workplaceType": "hybrid",
+    "opening": "",
+    "openingPlain": "",
+    "descriptionBody": "<div><b style=\"font-size: 18px;\">Gauss Labs Talent Pool </b></div><div><br></div><div>We appreciate you taking the time to submit your application for our Talent Pool. </div><div>We will be in touch should your qualifications be suitable for a future opening. </div><div><br></div><div>Contact: Gauss Labs Talent Acquisition Team (recruiting@gausslabs.ai)</div><div><br></div>",
+    "descriptionBodyPlain": "Gauss Labs Talent Pool \n\nWe appreciate you taking the time to submit your application for our Talent Pool. \nWe will be in touch should your qualifications be suitable for a future opening. \n\nContact: Gauss Labs Talent Acquisition Team (recruiting@gausslabs.ai)\n\n",
+    "hostedUrl": "https://jobs.lever.co/gausslabs/aa0ebe50-530f-4eb1-88a0-c42527966286",
+    "applyUrl": "https://jobs.lever.co/gausslabs/aa0ebe50-530f-4eb1-88a0-c42527966286/apply"
+  },
+  {
+    "additional": "",
+    "additionalPlain": "",
+    "categories": {
+      "commitment": "Full-time",
+      "department": "Stay in touch — join our talent pool.",
+      "location": "Palo Alto, CA",
+      "team": "Talent Pool",
+      "allLocations": [
+        "Palo Alto, CA"
+      ]
+    },
+    "createdAt": 1632806296010,
+    "descriptionPlain": "Gauss Labs Talent Pool \n\nWe appreciate you taking the time to submit your application for our Talent Pool. \nWe will be in touch should your qualifications be suitable for a future opening. \n\nContact: Gauss Labs Talent Acquisition Team (recruiting@gausslabs.ai)\n\n",
+    "description": "<div><b style=\"font-size: 18px;\">Gauss Labs Talent Pool </b></div><div><br></div><div>We appreciate you taking the time to submit your application for our Talent Pool. </div><div>We will be in touch should your qualifications be suitable for a future opening. </div><div><br></div><div>Contact: Gauss Labs Talent Acquisition Team (recruiting@gausslabs.ai)</div><div><br></div>",
+    "id": "1e2a2dec-4c36-42e6-952c-bb7613e49f82",
+    "lists": [],
+    "text": "Talent Pool (US)",
+    "country": "US",
+    "workplaceType": "hybrid",
+    "opening": "",
+    "openingPlain": "",
+    "descriptionBody": "<div><b style=\"font-size: 18px;\">Gauss Labs Talent Pool </b></div><div><br></div><div>We appreciate you taking the time to submit your application for our Talent Pool. </div><div>We will be in touch should your qualifications be suitable for a future opening. </div><div><br></div><div>Contact: Gauss Labs Talent Acquisition Team (recruiting@gausslabs.ai)</div><div><br></div>",
+    "descriptionBodyPlain": "Gauss Labs Talent Pool \n\nWe appreciate you taking the time to submit your application for our Talent Pool. \nWe will be in touch should your qualifications be suitable for a future opening. \n\nContact: Gauss Labs Talent Acquisition Team (recruiting@gausslabs.ai)\n\n",
+    "hostedUrl": "https://jobs.lever.co/gausslabs/1e2a2dec-4c36-42e6-952c-bb7613e49f82",
+    "applyUrl": "https://jobs.lever.co/gausslabs/1e2a2dec-4c36-42e6-952c-bb7613e49f82/apply"
+  }
+]

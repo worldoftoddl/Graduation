@@ -65,6 +65,15 @@ python3 02_data/scripts/job_posting_collection_dry_run.py \
 
 수집 중 로그인 화면, 캡차, 유료벽, 비공개 API 호출이 감지되면 해당 대상은 즉시 제외한다.
 
+공개 ATS 채용 보드 수집은 다음 명령을 사용한다.
+
+```bash
+python3 02_data/scripts/public_ats_job_board_fetch.py
+python3 02_data/scripts/public_ats_job_board_fetch.py --fetch --write
+```
+
+첫 번째 명령은 대상 공개 API 목록만 확인한다. 두 번째 명령은 Ashby·Lever 공개 채용 보드 API를 저속 호출해 후보 CSV, 수동 검수 큐, 출처 로그, 원본 JSON을 생성한다.
+
 Work24 Open API는 현재 보류한다. 개인회원 신청으로는 채용정보목록·채용정보상세 API를 사용할 수 없어, 본 프로젝트의 채용공고 표본 수집 경로로 바로 쓰기 어렵다.
 
 기관/사업자 권한을 확보했거나 저장 XML을 검증할 때만 다음 명령을 사용한다.

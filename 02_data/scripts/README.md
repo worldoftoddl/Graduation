@@ -28,6 +28,29 @@ python3 02_data/scripts/job_posting_collection_dry_run.py \
 
 실제 표본인 `02_data/raw/job_posting_sample.csv`에는 수동 검수 후 확정된 행만 옮긴다.
 
+## 공개 ATS 채용 보드 수집
+
+`public_ats_job_board_fetch.py`는 Ashby와 Lever의 공개 채용 보드 API에서 현재 게시 중인 공고를 수집한다. 로그인, 캡차, 유료벽, 비공개 API는 사용하지 않는다.
+
+계획 모드:
+
+```bash
+python3 02_data/scripts/public_ats_job_board_fetch.py
+```
+
+실제 수집:
+
+```bash
+python3 02_data/scripts/public_ats_job_board_fetch.py --fetch --write
+```
+
+생성 파일:
+
+- `02_data/raw/public_ats_job_posting_candidates.csv`
+- `02_data/job_posting_manual_review.public_ats.csv`
+- `02_data/source_log.public_ats.csv`
+- `01_research/raw/public_ats/*.json`
+
 ## Work24 Open API 후보 수집
 
 `work24_job_posting_fetch.py`는 Work24 채용정보 Open API 목록 응답을 표본 후보 CSV와 수동 검수 큐로 변환한다. 기본값에서는 네트워크에 접근하지 않고 요청 URL만 출력한다.

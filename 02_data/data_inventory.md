@@ -18,6 +18,7 @@
 | DATA-008 | `02_data/job_posting_collection_targets_template.csv` | 수집 대상 후보 URL·검색 조건 | 자동 수집 전 허용 조건 확인 | 템플릿 |
 | DATA-009 | `02_data/job_posting_manual_review_template.csv` | 자동 수집 후보 공고 | 최종 표본 편입 전 수동 검수 | 템플릿 |
 | DATA-010 | `02_data/raw/work24_job_posting_candidates.csv` / `02_data/job_posting_manual_review.work24.csv` | Work24 채용정보 Open API | Work24 채용공고 수동 검수 후보 | 보류 |
+| DATA-011 | `02_data/raw/public_ats_job_posting_candidates.csv` / `02_data/job_posting_manual_review.public_ats.csv` | Ashby·Lever 공개 채용 보드 API | 공개 ATS 기반 채용공고 수동 검수 후보 | 후보 43건 수집 |
 
 ## 공통 메타데이터 필드
 
@@ -139,6 +140,17 @@
 - `02_data/raw/work24_job_posting_candidates.csv`는 최종 표본이 아니라 수동 검수 전 후보 파일이다.
 - `required_skills`, `skill_tags`, `domain_requirement`는 목록 API만으로 충분하지 않을 수 있으므로 상세 페이지/API 확인 후 수동 보강한다.
 - 최종 표본 편입 시에만 `sample_id`를 부여하고 `02_data/raw/job_posting_sample.csv`로 옮긴다.
+
+### DATA-011. 공개 ATS 채용공고 후보
+
+`02_data/scripts/public_ats_job_board_fetch.py`로 생성한다. Ashby와 Lever의 공개 채용 보드 API를 사용해 현재 게시 중인 공고를 가져오고, 한국 위치 필드와 AI/ML 직무 근거가 있는 후보만 남긴다.
+
+주의:
+
+- `02_data/raw/public_ats_job_posting_candidates.csv`는 최종 표본이 아니라 수동 검수 전 후보 파일이다.
+- 원본 JSON은 `01_research/raw/public_ats/`에 저장한다.
+- 수집 범위는 회사 공식 채용 보드 12개이므로 대표통계가 아니라 탐색적 보조 표본이다.
+- 최종 표본 편입 시 중복·비기술 직무·해외 직무를 수동으로 제외하고 `sample_id`를 부여한다.
 
 ## 차트 후보
 
