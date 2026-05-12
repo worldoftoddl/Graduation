@@ -2,9 +2,17 @@
 
 ## 파일 구성
 
-- `CLAUDE.md` — 프로젝트 루트 컨텍스트. Claude Code가 매 세션 시작 시 자동 로드.
-- `.claude/agents/*.md` — Sub-agent 정의 파일들. `@agent-name` 형식으로 호출.
-- `01_research/sources.md` — 자료 인용 DB 템플릿. 모든 1차 자료는 여기에 먼저 등록.
+- `AGENT.md` — 프로젝트 루트 컨텍스트. Codex/Claude 작업 시 우선 참고할 업무지시서.
+- `agents/*.md` — Sub-agent 정의 파일들. `@agent-name` 형식으로 호출.
+- `00_plan/` — 목차·방법론·일정·표본 설계.
+- `01_research/sources.md` — 자료 인용 DB. 모든 본문 근거 자료는 여기에 먼저 등록.
+- `01_research/notes/`, `01_research/raw/` — 자료별 요약 노트와 원문·스냅샷 보관.
+- `02_data/` — 정량 데이터 CSV와 분석 노트북.
+- `03_figures/` — 최종 차트 PNG와 생성 스크립트.
+- `04_drafts/` — 장별 초안.
+- `05_integrated/` — 통합본.
+- `06_export/` — 제출용 DOCX/HWP 변환본.
+- `99_archive/` — 폐기 초안과 이전 버전.
 
 ## Sub-agent 호출법
 
@@ -23,9 +31,9 @@ Claude Code에서 다음과 같이 호출:
 
 본 프로젝트는 출처 명시를 다음 4중으로 강제합니다:
 
-1. `CLAUDE.md`에 절대 원칙으로 박힘 (매 세션 자동 로드)
+1. `AGENT.md`에 절대 원칙으로 박힘
 2. 각 sub-agent 프롬프트에 도메인별 출처원 화이트리스트와 함께 재명시
-3. 표준 출처 양식 통일: `[출처: 기관명, 「자료명」, 발행연도, 페이지, URL, 접근일 YYYY-MM-DD]`
+3. 표준 출처 양식 통일: `[출처: 기관명/저자, 「자료명」, 발행연도, 페이지(있으면), URL, 접근일 YYYY-MM-DD]`
 4. 출처 미확보 시 `⚠ 출처 미확보` 형식으로 보고하도록 행동 규칙 박힘
 
 ## 본인 Voice 보존 메커니즘
@@ -42,7 +50,7 @@ Claude Code가 본문을 통째로 생성하지 않도록 다음 규칙이 강�
 
 ```bash
 git init
-git add CLAUDE.md .claude/ 01_research/
+git add AGENT.md agents/ 01_research/
 git commit -m "초기 프로젝트 셋업"
 
 # 매일 작업 후
@@ -52,7 +60,7 @@ git commit -m "Day N: 3장 1절 초안 작성 (본인 작성)"
 
 ## 다음 단계 권장
 
-1. **Phase 1 완료 점검**: 디렉토리 구조 생성, CLAUDE.md·sub-agent 배치 완료
+1. **Phase 1 완료 점검**: 디렉토리 구조 생성, `AGENT.md`·sub-agent 배치 완료
 2. **Phase 2 시작**: `@industry-analyst`로 SPRi·NIPA·통계청 자료부터 수집
 3. **자료 등록**: `01_research/sources.md`에 30~50개 1차 자료 등록 (Phase 2 종료 기준)
 4. **Phase 3**: 데이터 분석 노트북 작성, matplotlib 한국어 폰트 셋업

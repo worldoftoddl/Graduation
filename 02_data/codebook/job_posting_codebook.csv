@@ -1,0 +1,10 @@
+variable_name,variable_label,allowed_values,coding_rule,example,missing_rule
+sample_id,표본 ID,JOB-001...,수집 순서대로 부여,JOB-001,필수
+collection_method,수집 방식,auto;manual,자동 수집이면 robots/약관 확인 및 source_log_id 필수,auto,필수
+robots_terms_checked,robots/약관 확인 여부,yes;no,자동 수집 전 확인했으면 yes,yes,필수
+source_log_id,출처 로그 ID,LOG-001...,source_log.csv와 연결,LOG-001,자동 수집이면 필수
+normalized_role,정규화 직무,"data_scientist;ml_engineer;ai_deep_learning_engineer;mlops_platform_engineer;applied_ai_developer;prompt_ai_operator;ai_researcher",업무내용 기준으로 7분류 중 하나 선택,applied_ai_developer,판단 불가 시 notes에 사유
+skill_tags,정규화 스킬 태그,"python;pytorch;tensorflow;sql;cloud;docker_k8s;mlops;llm;rag;langchain;vector_db;nlp;cv;recommender;data_labeling;domain_finance;domain_legal;domain_healthcare",원문 required_skills를 태그로 변환,"python;llm;rag;vector_db",없으면 빈값
+experience_level,경력 수준,"entry;junior;mid;senior;lead;unknown",공고의 연차·직급 표현 기준,mid,명시 없으면 unknown
+domain_requirement,도메인 요건,free_text,금융·회계·법무 등 명시된 도메인 지식 기록,finance/accounting,없으면 빈값
+raw_file,원문 저장 경로,path,PDF 또는 스크린샷 저장 위치 기록,01_research/raw/job_postings/JOB-001.pdf,저장 전이면 빈값
