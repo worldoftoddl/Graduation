@@ -32,6 +32,8 @@ python3 02_data/scripts/job_posting_collection_dry_run.py \
 
 `work24_job_posting_fetch.py`는 Work24 채용정보 Open API 목록 응답을 표본 후보 CSV와 수동 검수 큐로 변환한다. 기본값에서는 네트워크에 접근하지 않고 요청 URL만 출력한다.
 
+현재 개인회원 신청으로는 채용정보목록·채용정보상세 API를 사용할 수 없으므로 실제 API 호출은 보류한다. 기관/사업자 권한을 확보했거나 저장 XML을 검증할 때만 사용한다.
+
 계획 모드:
 
 ```bash
@@ -51,7 +53,7 @@ python3 02_data/scripts/work24_job_posting_fetch.py \
   --write
 ```
 
-실제 API 호출은 인증키를 받은 뒤에만 실행한다.
+실제 API 호출은 채용정보목록·상세 API 권한이 있는 인증키를 받은 뒤에만 실행한다.
 
 ```bash
 WORK24_OPENAPI_AUTH_KEY=발급받은_인증키 \

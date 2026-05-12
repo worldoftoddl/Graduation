@@ -65,7 +65,9 @@ python3 02_data/scripts/job_posting_collection_dry_run.py \
 
 수집 중 로그인 화면, 캡차, 유료벽, 비공개 API 호출이 감지되면 해당 대상은 즉시 제외한다.
 
-Work24 Open API는 인증키를 발급받은 뒤 다음 순서로 실행한다.
+Work24 Open API는 현재 보류한다. 개인회원 신청으로는 채용정보목록·채용정보상세 API를 사용할 수 없어, 본 프로젝트의 채용공고 표본 수집 경로로 바로 쓰기 어렵다.
+
+기관/사업자 권한을 확보했거나 저장 XML을 검증할 때만 다음 명령을 사용한다.
 
 ```bash
 python3 02_data/scripts/work24_job_posting_fetch.py \
@@ -88,7 +90,7 @@ python3 02_data/scripts/work24_job_posting_fetch.py \
   --write
 ```
 
-첫 번째 명령은 계획 모드라 네트워크에 접근하지 않는다. 두 번째 명령은 저장된 XML fixture로 CSV 변환을 검증한다. 세 번째 명령만 실제 API에 접근하며, 결과는 최종 표본이 아니라 수동 검수 후보 파일로 저장한다.
+첫 번째 명령은 계획 모드라 네트워크에 접근하지 않는다. 두 번째 명령은 저장된 XML fixture로 CSV 변환을 검증한다. 세 번째 명령만 실제 API에 접근하므로, 채용정보목록·상세 API 권한이 확인된 경우에만 실행한다. 결과는 최종 표본이 아니라 수동 검수 후보 파일로 저장한다.
 
 ## 5. 수동 검수
 

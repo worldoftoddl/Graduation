@@ -17,7 +17,7 @@
 | DATA-007 | `02_data/raw/sw_industry_spri_2024.csv` / `02_data/processed/sw_industry_spri_2024.csv` | LAB-007 | SW 산업 인력과 AI 비교 | 예정 |
 | DATA-008 | `02_data/job_posting_collection_targets_template.csv` | 수집 대상 후보 URL·검색 조건 | 자동 수집 전 허용 조건 확인 | 템플릿 |
 | DATA-009 | `02_data/job_posting_manual_review_template.csv` | 자동 수집 후보 공고 | 최종 표본 편입 전 수동 검수 | 템플릿 |
-| DATA-010 | `02_data/raw/work24_job_posting_candidates.csv` / `02_data/job_posting_manual_review.work24.csv` | Work24 채용정보 Open API | Work24 채용공고 수동 검수 후보 | 스크립트 준비 |
+| DATA-010 | `02_data/raw/work24_job_posting_candidates.csv` / `02_data/job_posting_manual_review.work24.csv` | Work24 채용정보 Open API | Work24 채용공고 수동 검수 후보 | 보류 |
 
 ## 공통 메타데이터 필드
 
@@ -134,7 +134,8 @@
 
 주의:
 
-- 인증키가 없으면 계획 모드 또는 저장 XML fixture만 사용한다.
+- 개인회원 신청으로는 채용정보목록·채용정보상세 API를 사용할 수 없으므로 현 단계에서는 실제 호출을 보류한다.
+- 채용정보목록·상세 API 권한이 있는 인증키가 없으면 계획 모드 또는 저장 XML fixture만 사용한다.
 - `02_data/raw/work24_job_posting_candidates.csv`는 최종 표본이 아니라 수동 검수 전 후보 파일이다.
 - `required_skills`, `skill_tags`, `domain_requirement`는 목록 API만으로 충분하지 않을 수 있으므로 상세 페이지/API 확인 후 수동 보강한다.
 - 최종 표본 편입 시에만 `sample_id`를 부여하고 `02_data/raw/job_posting_sample.csv`로 옮긴다.
