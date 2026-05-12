@@ -36,6 +36,17 @@
 | url | 출처 URL |
 | limitations | 플랫폼 편향, 검색어 편향, 누락 가능성 |
 
+## 실행 게이트
+
+자동 수집은 다음 순서가 모두 충족된 뒤 실행한다.
+
+1. `02_data/job_posting_collection_targets_template.csv` 형식으로 후보 URL과 검색 조건을 등록한다.
+2. robots.txt, 약관, 공개 API 또는 다운로드 허용 범위를 확인하고 `robots_terms_checked=yes`로 기록한다.
+3. 로그인, 캡차, 유료벽, 비공개 API 접근이 필요 없는 대상만 남긴다.
+4. `02_data/source_log.csv`에 수집 조건과 한계를 먼저 기록한다.
+5. 드라이런으로 제외 대상과 출력 CSV 헤더 호환성을 확인한다.
+6. 자동 수집 결과를 수동 검수한 뒤 최종 표본에만 `sample_id`를 부여한다.
+
 ## 본문 표현
 
 - “채용공고 자동 수집 + 수동 검수 표본”

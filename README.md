@@ -8,6 +8,7 @@
 - `01_research/sources.md` — 자료 인용 DB. 모든 본문 근거 자료는 여기에 먼저 등록.
 - `01_research/notes/`, `01_research/raw/` — 자료별 요약 노트와 원문·스냅샷 보관.
 - `02_data/` — 정량 데이터 CSV와 분석 노트북.
+- `02_data/job_posting_collection_workflow.md` — 채용공고 자동 수집·수동 검수 실행 절차.
 - `03_figures/` — 최종 차트 PNG와 생성 스크립트.
 - `04_drafts/` — 장별 초안.
 - `05_integrated/` — 통합본.

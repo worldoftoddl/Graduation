@@ -1,0 +1,2 @@
+source_log_id,dataset_file,source_name,source_table_or_page,query_condition,period_covered,download_or_access_date,collection_method,robots_terms_checked,request_interval_seconds,crawler_user_agent,url,limitations,notes
+LOG-001,02_data/raw/job_posting_sample.csv,Example public AI job search,Example public AI job search,AI 엔지니어,2026-05,2026-05-12,auto,yes,10,GraduationResearchBot/0.1,https://example.com/careers?query=AI,example row only; replace before collection,dry-run example

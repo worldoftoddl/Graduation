@@ -15,6 +15,8 @@
 | DATA-005 | `02_data/raw/wage_job_portal_ai_occupations.csv` / `02_data/processed/ai_occupation_wage_outlook.csv` | LAB-004, LAB-005 | 직무·직급별 보상 기준선 | 예정 |
 | DATA-006 | `02_data/raw/job_posting_sample.csv` / `02_data/processed/job_posting_sample_coded.csv` | 자동 수집 + 수동 검수 표본 | 요구 스킬셋·직무명 분석 | 예정 |
 | DATA-007 | `02_data/raw/sw_industry_spri_2024.csv` / `02_data/processed/sw_industry_spri_2024.csv` | LAB-007 | SW 산업 인력과 AI 비교 | 예정 |
+| DATA-008 | `02_data/job_posting_collection_targets_template.csv` | 수집 대상 후보 URL·검색 조건 | 자동 수집 전 허용 조건 확인 | 템플릿 |
+| DATA-009 | `02_data/job_posting_manual_review_template.csv` | 자동 수집 후보 공고 | 최종 표본 편입 전 수동 검수 | 템플릿 |
 
 ## 공통 메타데이터 필드
 
@@ -84,6 +86,46 @@
 | url | 원문 URL |
 | raw_file | PDF/스크린샷 경로 |
 | notes | 분류·중복 판단 메모 |
+
+### DATA-008. 채용공고 수집 대상 후보
+
+| 컬럼 | 설명 |
+|---|---|
+| target_id | `TGT-001` 형식 |
+| platform | 채용 플랫폼 또는 회사 채용페이지 |
+| source_name | 원자료명 또는 검색 결과 페이지명 |
+| url | 수집 대상 URL |
+| search_keyword | 검색어 |
+| period_covered | 공고 게시 기간 또는 검색 기간 |
+| collection_method | `auto` 또는 `manual` |
+| robots_url | 확인한 robots.txt URL |
+| terms_url | 확인한 약관 또는 API 문서 URL |
+| robots_terms_checked | 자동 수집 허용 조건 확인 여부 |
+| allowed_basis | 허용 판단 근거 |
+| requires_login | 로그인 필요 여부 |
+| has_captcha | 캡차 존재 여부 |
+| has_paywall | 유료벽 존재 여부 |
+| request_interval_seconds | 요청 간격 |
+| crawler_user_agent | 사용할 User-Agent |
+| source_log_id | `02_data/source_log.csv`의 로그 ID |
+| limitations | 플랫폼·검색어·기간 편향 |
+| notes | 제외 사유 또는 추가 확인 사항 |
+
+### DATA-009. 채용공고 수동 검수 큐
+
+| 컬럼 | 설명 |
+|---|---|
+| candidate_id | 자동 수집 후보 ID |
+| sample_id | 최종 표본 편입 시 부여할 `JOB-001` 형식 ID |
+| source_log_id | 출처 로그 ID |
+| reviewed_at | 수동 검수일 |
+| reviewer | 검수자 |
+| include_decision | `include`, `exclude`, `hold` |
+| exclude_reason | 제외 사유 |
+| duplicate_of | 중복인 경우 기준 후보 ID |
+| normalized_role | 코딩북의 7개 직군 |
+| skill_tags | 코딩북의 정규화 스킬 태그 |
+| review_notes | 판단 근거 |
 
 ## 차트 후보
 

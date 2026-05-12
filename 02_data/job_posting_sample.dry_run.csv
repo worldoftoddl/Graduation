@@ -1,0 +1,2 @@
+sample_id,collected_at,posting_date,collection_method,robots_terms_checked,source_log_id,search_keyword,platform,company,industry,job_title,normalized_role,experience_level,min_experience_years,education_level,employment_type,required_skills,skill_tags,domain_requirement,compensation,location,url,raw_file,manual_reviewed,notes
+,2026-05-12,,auto,yes,LOG-001,AI 엔지니어,Example Careers,,,,,,,,,,,,,,https://example.com/careers?query=AI,,no,dry-run placeholder; assign sample_id only after manual review

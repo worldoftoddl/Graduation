@@ -94,6 +94,14 @@
 
 `AI 엔지니어`, `머신러닝 엔지니어`, `딥러닝 엔지니어`, `데이터 사이언티스트`, `MLOps`, `LLM`, `생성형 AI`, `RAG`, `NLP`, `Computer Vision`, `추천시스템`, `AI Researcher`, `Prompt Engineer`
 
+## 파일럿 실행 절차
+
+1. 후보 URL 목록을 CSV로 작성한다.
+2. 각 후보에 대해 `robots_terms_checked=yes` 여부와 로그인·캡차·유료벽·비공개 API 필요 여부를 기록한다.
+3. `python3 02_data/scripts/job_posting_collection_dry_run.py --targets 02_data/job_posting_collection_targets_example.csv --write`로 표본 CSV와 출처 로그 CSV에 들어갈 행을 검증한다.
+4. dry-run 결과를 수동 검수한 뒤 최종 편입 시 `02_data/raw/job_posting_sample.csv`와 `02_data/source_log.csv`에 반영한다.
+5. 실제 네트워크 접근과 파일 저장은 별도 후속 단계로 분리한다.
+
 ## 본문 반영 한계
 
 - 표본은 대표통계가 아니라 탐색적 보조자료다.
