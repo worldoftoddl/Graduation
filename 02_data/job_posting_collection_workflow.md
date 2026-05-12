@@ -46,6 +46,9 @@ python3 02_data/scripts/job_posting_collection_dry_run.py --help
 python3 02_data/scripts/job_posting_collection_dry_run.py \
   --targets 02_data/job_posting_collection_targets_example.csv \
   --write
+python3 02_data/scripts/job_posting_collection_dry_run.py \
+  --targets 02_data/job_posting_collection_targets_pilot.csv \
+  --write
 ```
 
 위 명령은 실제 웹페이지에 접근하지 않고 다음 드라이런 파일만 만든다.
