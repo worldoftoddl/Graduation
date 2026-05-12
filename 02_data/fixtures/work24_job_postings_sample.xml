@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wantedRoot>
+  <total>2</total>
+  <startPage>1</startPage>
+  <display>2</display>
+  <wanted>
+    <wantedAuthNo>KJAB000000000001</wantedAuthNo>
+    <company>Example AI Labs</company>
+    <indTpNm>응용 소프트웨어 개발 및 공급업</indTpNm>
+    <title>LLM RAG 서비스 개발자</title>
+    <salTpNm>연봉</salTpNm>
+    <sal>5000만원 이상</sal>
+    <minSal>5000</minSal>
+    <maxSal>7000</maxSal>
+    <region>서울 강남구</region>
+    <minEdubg>대졸(4년)</minEdubg>
+    <maxEdubg>석사</maxEdubg>
+    <career>경력</career>
+    <regDt>2026-05-01</regDt>
+    <closeDt>2026-05-31</closeDt>
+    <wantedInfoUrl>https://www.work24.go.kr/example/jobs/KJAB000000000001</wantedInfoUrl>
+    <empTpCd>10</empTpCd>
+    <jobsCd>133200</jobsCd>
+  </wanted>
+  <wanted>
+    <wantedAuthNo>KJAB000000000002</wantedAuthNo>
+    <company>Example Data Company</company>
+    <indTpNm>데이터베이스 및 온라인정보 제공업</indTpNm>
+    <title>머신러닝 엔지니어</title>
+    <salTpNm>연봉</salTpNm>
+    <sal>회사내규에 따름</sal>
+    <minSal></minSal>
+    <maxSal></maxSal>
+    <region>경기 성남시</region>
+    <minEdubg>학력무관</minEdubg>
+    <maxEdubg>학력무관</maxEdubg>
+    <career>관계없음</career>
+    <regDt>2026-05-02</regDt>
+    <closeDt>2026-06-02</closeDt>
+    <wantedInfoUrl>https://www.work24.go.kr/example/jobs/KJAB000000000002</wantedInfoUrl>
+    <empTpCd>10</empTpCd>
+    <jobsCd>133201</jobsCd>
+  </wanted>
+</wantedRoot>

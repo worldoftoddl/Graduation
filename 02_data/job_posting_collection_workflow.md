@@ -65,6 +65,31 @@ python3 02_data/scripts/job_posting_collection_dry_run.py \
 
 수집 중 로그인 화면, 캡차, 유료벽, 비공개 API 호출이 감지되면 해당 대상은 즉시 제외한다.
 
+Work24 Open API는 인증키를 발급받은 뒤 다음 순서로 실행한다.
+
+```bash
+python3 02_data/scripts/work24_job_posting_fetch.py \
+  --keyword AI \
+  --display 10 \
+  --max-pages 1
+
+python3 02_data/scripts/work24_job_posting_fetch.py \
+  --input-xml 02_data/fixtures/work24_job_postings_sample.xml \
+  --sample-out 02_data/raw/work24_job_posting_candidates.dry_run.csv \
+  --review-out 02_data/job_posting_manual_review.work24.dry_run.csv \
+  --write
+
+WORK24_OPENAPI_AUTH_KEY=발급받은_인증키 \
+python3 02_data/scripts/work24_job_posting_fetch.py \
+  --fetch \
+  --keyword AI \
+  --display 10 \
+  --max-pages 1 \
+  --write
+```
+
+첫 번째 명령은 계획 모드라 네트워크에 접근하지 않는다. 두 번째 명령은 저장된 XML fixture로 CSV 변환을 검증한다. 세 번째 명령만 실제 API에 접근하며, 결과는 최종 표본이 아니라 수동 검수 후보 파일로 저장한다.
+
 ## 5. 수동 검수
 
 자동 수집 후보는 `02_data/job_posting_manual_review_template.csv` 형식으로 검수한다. 최종 표본에 넣을 때만 `sample_id`를 부여하고 `02_data/raw/job_posting_sample.csv`에 반영한다.

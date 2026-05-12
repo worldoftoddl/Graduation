@@ -24,6 +24,14 @@
 
 파일럿 dry-run에서는 TGT-101만 통과시키고, 나머지는 안전하게 제외한다. 민간 플랫폼은 공식 API 승인 또는 명시적 허용 근거를 확보하기 전까지 실제 자동 수집 대상으로 사용하지 않는다.
 
+## Work24 실행 스크립트
+
+- 계획 모드: `python3 02_data/scripts/work24_job_posting_fetch.py --keyword AI --display 10 --max-pages 1`
+- 오프라인 파싱 검증: `python3 02_data/scripts/work24_job_posting_fetch.py --input-xml 02_data/fixtures/work24_job_postings_sample.xml --write`
+- 실제 API 호출: `WORK24_OPENAPI_AUTH_KEY=... python3 02_data/scripts/work24_job_posting_fetch.py --fetch --keyword AI --display 10 --max-pages 1 --write`
+
+실제 API 호출은 인증키 발급 뒤에만 실행한다. 결과 파일은 최종 표본이 아니라 수동 검수 후보로 취급한다.
+
 ## 확인 URL
 
 - Work24 Open API: `https://www.work24.go.kr/cm/e/a/0110/selectOpenApiSvcInfo.do?fullApiSvcId=000000000000000000000000000000`

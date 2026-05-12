@@ -27,3 +27,44 @@ python3 02_data/scripts/job_posting_collection_dry_run.py \
 - `02_data/job_posting_manual_review.dry_run.csv`
 
 실제 표본인 `02_data/raw/job_posting_sample.csv`에는 수동 검수 후 확정된 행만 옮긴다.
+
+## Work24 Open API 후보 수집
+
+`work24_job_posting_fetch.py`는 Work24 채용정보 Open API 목록 응답을 표본 후보 CSV와 수동 검수 큐로 변환한다. 기본값에서는 네트워크에 접근하지 않고 요청 URL만 출력한다.
+
+계획 모드:
+
+```bash
+python3 02_data/scripts/work24_job_posting_fetch.py \
+  --keyword AI \
+  --display 10 \
+  --max-pages 1
+```
+
+오프라인 fixture 검증:
+
+```bash
+python3 02_data/scripts/work24_job_posting_fetch.py \
+  --input-xml 02_data/fixtures/work24_job_postings_sample.xml \
+  --sample-out 02_data/raw/work24_job_posting_candidates.dry_run.csv \
+  --review-out 02_data/job_posting_manual_review.work24.dry_run.csv \
+  --write
+```
+
+실제 API 호출은 인증키를 받은 뒤에만 실행한다.
+
+```bash
+WORK24_OPENAPI_AUTH_KEY=발급받은_인증키 \
+python3 02_data/scripts/work24_job_posting_fetch.py \
+  --fetch \
+  --keyword AI \
+  --display 10 \
+  --max-pages 1 \
+  --write
+```
+
+생성 파일:
+
+- `02_data/raw/work24_job_posting_candidates.csv`
+- `02_data/job_posting_manual_review.work24.csv`
+- `01_research/raw/Work24/*.xml` (`--fetch --write` 사용 시)
